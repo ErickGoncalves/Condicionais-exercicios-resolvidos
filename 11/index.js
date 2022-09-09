@@ -6,3 +6,13 @@ const mesesDecorridos = 12;
 
 // Soma das parcelas já pagas pelo aluno nos meses anteriores (em centavos). Se for igual a 18 mil reais, o aluno não deve pagar mais nada, pois já quitou a dívida.
 const totalJaPagoPeloAluno = 1000000;
+
+
+if (mesesDecorridos > 60 || totalJaPagoPeloAluno > 1800000) {
+    console.log("O valor da parcela é zero.")
+} else if (rendaMensalEmCentavos > 200000) {
+    const valorParcela = (rendaMensalEmCentavos * 0.18);
+    console.log(`O valor da parcela desse mês é R$ ${valorParcela.toFixed()} reais.`)
+} else {
+    console.log("O valor da parcela desse mês é R$ 0 reais. Nenhum valor é devido pois a renda do estudante está abaixo do valor mínimo de R$ 2.000,00 reais.")
+}
