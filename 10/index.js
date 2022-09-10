@@ -1,4 +1,4 @@
-const caractere = "0";
+const caractere = "3";
 const vogaisMaiusculas = "A,E,I,O,U";
 const vogaisMinusculas = "a,e,i,o,u"
 
